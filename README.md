@@ -1,6 +1,5 @@
-# Identity Mapping Service
-
-(SPECIAL for OpenPhacts 1.3 an SQL hack must be run after loading: See EndOfLoadhack.txt)
+# Identity Mapping Service.
+(SPECIAL for Open PHACTS 1.3 an SQL hack must be run after loading: See EndOfLoadhack.txt)
 
 This repository depends on:
 
