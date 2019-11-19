@@ -1,10 +1,11 @@
-Identity Mapping Service.
+# Identity Mapping Service
+
 (SPECIAL for OpenPhacts 1.3 an SQL hack must be run after loading: See EndOfLoadhack.txt)
 
-This repository depends on 
+This repository depends on:
 
-BridgeDB: https://github.com/openphacts/BridgeDb
-Validator https://github.com/openphacts/Validator
+* BridgeDb: https://github.com/BridgeDb/BridgeDb
+* Validator https://github.com/BridgeDb/Validator
 
 Currently neither is available in a maven repository so please download and build these first.
 
@@ -13,10 +14,7 @@ Note: The Transitive section of config.txt is required by the IMS
 
 The IMS WebService includes all methods from both the BridgeDb WS (including URI calls) and the Validator WS.
 
-===
-
-[![Join the chat at https://gitter.im/openphacts/IdentityMappingService](https://badges.gitter.im/openphacts/IdentityMappingService.svg)](https://gitter.im/openphacts/IdentityMappingService?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-Configuration:
+## Configuration
 
 This project depends on configurations as described in BOTH:
 {$bridgeDB}README.md which covers things like setting up MYSQL, DataSources, Transitive directories and Lens.
@@ -27,8 +25,7 @@ local.properties
 -
 A single local.properties file is shared between BridgeDB, Validator, IMS and if applicable QueryExpander
 
--
-Finding local copied of URIs being loaded.
+## Finding local copied of URIs being loaded
 
 In addition to overwriting any value in any other properties file, local.properties can also be used to set URI pattern to file path mappings.
 
@@ -75,8 +72,7 @@ pathToFile.opsMore.path          /OPS_more/linksets
 
 Note: The system will automatically create a mapping between TransitiveDirectory and TransitiveBaseUri (see BridgeDB properties)
 
-==
-Data loading:
+# Data loading
 
 New to OpenPhacts 1.2: Data loading is done from URIs so no need to have local copies of the files.
 New to OpenPhacts 1.3: Data loading instructions is instructions come from a xml file.
@@ -94,8 +90,7 @@ It will have a default value that points to the current suggested OpenPhacts loa
 Note: best is to copy your configuration files into the folder that holds the jar.
 And make sure there are no RELATIVE directories!
 
-=====
-load.xml 
+#### load.xml 
 
 The URI parameter to RunLoader should point to an xml file often called load.xml
 
