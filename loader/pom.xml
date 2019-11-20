@@ -38,8 +38,8 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>uk.ac.manchester.cs.datadesc.validator</groupId>
-            <artifactId>metadata</artifactId>
+            <groupId>com.github.bridgedb</groupId>
+            <artifactId>validator-metadata</artifactId>
             <version>${validator.version}</version>
             <scope>compile</scope>
         </dependency>
