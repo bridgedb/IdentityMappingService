@@ -3,4 +3,4 @@ language: java
 jdk:
   - oraclejdk11
 
-script: mvn --settings .travis/settings.xml -Dmaven.test.failure.ignore=true clean install
+install: mvn --settings .travis/settings.xml -Dmaven.test.failure.ignore=true clean install
