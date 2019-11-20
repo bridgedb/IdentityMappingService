@@ -85,8 +85,8 @@
             <version>2.0.5-SNAPSHOT</version>
         </dependency>
 		<dependency>
-			<groupId>uk.ac.manchester.cs.datadesc.validator</groupId>
-			<artifactId>ws-service</artifactId>
+			<groupId>com.github.bridgedb</groupId>
+			<artifactId>validator-ws-service</artifactId>
 			<version>${validator.version}</version>
 		</dependency>
 		<dependency>
