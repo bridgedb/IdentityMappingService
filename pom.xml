@@ -89,6 +89,14 @@
 		<!--</pluginRepository>-->
 	</pluginRepositories>
 
+  <repositories>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/bridgedb/Validator</url>
+      <name>GitHub Validator Apache Maven Packages</name>
+    </repository>
+  </repositories>
+
   <scm>
     <connection>scm:git:https://github.com/openphacts/IdentityMappingService.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/openphacts/IdentityMappingService.git</developerConnection>
